@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Progress</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="progress-container">
+            <h1 class="progress-container__title">Progress</h1>
+            <div class="progress-bar">
+                <svg class="progress-bar__circle circle" width="200" height="200">
+                    <circle class="circle__bg" r="90" cx="100" cy="100"></circle>
+                    <circle class="circle__progress" r="90" cx="100" cy="100"></circle>
+                </svg>
+            </div>
+
+            <div class="progress-nav">
+                <label class="progress-nav__label-input">
+                    <input class="progress-nav__input" type="number" size="3" min="0" max="100" value="0">Value
+                </label>
+    
+                <label class="progress-nav__label-checkbox checkbox">
+                    <input type="checkbox" class="progress-nav__checkbox-input progress-nav__checkbox-input_animated" />
+                    <p class="progress-nav__checkbox-text">Animate</p>
+                </label>
+    
+                <label class="progress-nav__label-checkbox checkbox">
+                    <input type="checkbox" class="progress-nav__checkbox-input progress-nav__checkbox-input_hidden" />
+                    <div class="progress-nav__checkbox-text">Hide</div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
